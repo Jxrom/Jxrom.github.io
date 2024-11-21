@@ -2,238 +2,130 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Jerome Marbebe</title>
-    <link rel="icon" href="icons/bacon.ico" />
-    <link rel="stylesheet" href="css/style.css" />
+    <title>JXROM.DEV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Hello World!, I'm Jerome. <br /></h1>
-
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#education">Education</a>
-        </li>
-        <li>
-          <a href="#contact">Contact Me</a>
-        </li>
-      </ul>
+      <div class="header-container">
+        <div class="logo">
+          <a href="#">JXROM.DEV</a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">PROJECTS</a></li>
+            <li><a href="#services">ABOUT ME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="cta">
+        <a href="#shop" class="btn">Shop Now</a>
+      </div>
     </header>
-
-    <hr />
-
-    <article id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm Jerome Marbebe, currently taking my bachelors degree in Computer
-        Engineering at
-        <a href="https://tip.edu.ph/" target="_blank" rel="noopener noreferrer"
-          >Technological Institute of the Philippines - Quezon City</a
-        >
-        and an aspiring network/software engineer in the future.
-      </p>
-
-      <h3>My Field of Interest</h3>
-      <ul>
-        <li>
-          <p>Network Engineering/Architecture/Automation</p>
-        </li>
-        <li>
-          <p>Software Engineering / Programming</p>
-        </li>
-        <li>
-          <p>CAD / 3D Modelling</p>
-        </li>
-        <li>
-          <p>Graphic Design</p>
-        </li>
-        <li>
-          <p>Data Science</p>
-        </li>
-      </ul>
-
-      <h4>
-        <a
-          href="https://www.canva.com/design/DAE-A-Uoz9Y/zYHXoXQCV0VOn0Yq8ak1dw/view?utm_content=DAE-A-Uoz9Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Download My CV</a
-        >
-      </h4>
-    </article>
-
-    <hr />
-
-    <article id="projects">
-      <h2>Projects</h2>
-      <p>Here are the list of my past projects:</p>
-
-      <ul>
-        <li>
-          <a
-            href="https://www.facebook.com/100024075825323/videos/885963812216138/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >3D Model House - Autocad Project</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://youtu.be/nuNXJ-LiDtU"
-            target="_blank"
-            rel="noopener noreferrer"
-            >COVID - 19 Management System in Python</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://youtu.be/NHcUEmJuZr0"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Hotel Management System in Python</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://youtu.be/LyKNWEkdILs"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Water Dam Circuit Design in TinkerCad</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://youtu.be/Ny56F4t-o-c"
-            target="_blank"
-            rel="noopener noreferrer"
-            >MUNI Note Taking App</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://jxrom-flower-classifier-app-zj2ut2.streamlit.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Flower Classifier App</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://jxrom-urinity-app-app-tv8src.streamlit.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Urinity Test Tube Classifier App</a
-          >
-        </li>
-      </ul>
-    </article>
-
-    <hr />
-
-    <article id="education">
-      <h2>Education</h2>
-      <p>STEM - Sacred Heart Academy of Novaliches</p>
-      <p>
-        Computer Engineering (2020 - ?) - Technological Institute of the
-        Philippines Quezon City
-      </p>
-    </article>
-
-    <hr />
-
-    <article id="contact">
-      <h2>My Contact Form</h2>
-      <form action="https://formspree.io/f/xgednnrw" method="post">
-        <fieldset>
-          <legend>Send Me A Message</legend>
+    <main>
+      <section class="hero">
+        <div class="text-content">
+          <h1>TURTLEBYTE</h1>
           <p>
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="your name"
-              required
-            />
+            Turtlebyte is a robotics learning kit for ages 9-12, using
+            card-based coding instead of text, leading to better attention,
+            understanding, spatial and motor skill development, and
+            collaboration.
           </p>
-          <p>
-            <label for="email">Email:</label>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="your email"
-              required
-            />
+          <a
+            href="https://www.jamesdysonaward.org/en-US/2024/project/turtlebyte"
+            class="discover-link"
+            target="_blank"
+            >Discover</a
+          >
+        </div>
+        <div class="image-content">
+          <img src="images/turtlebyte.jpg" alt="Turtlebyte Robotics Kit" />
+        </div>
+      </section>
+
+      <!-- New section with styled content -->
+      <section class="profession-section">
+        <div class="content">
+          <h1 class="left">A <b>Computer Engineer</b> by profession</h1>
+          <h1 class="right">a <b>Software Developer</b> by passion</h1>
+          <h1 class="left">and an <b>Artist</b> in this craft.</h1>
+
+          <h3 class="centered-title">the story of me</h3>
+          <p class="justified-text">
+            A product of passion and love for technology, I yearn for thy
+            commitment in my craft. My passion for thy technology was concepted
+            when I was grade school, when I was learning computer for the first
+            time in my life, where I first learn the difference between a
+            hardware and a software, where I understood the difference of ROM
+            and RAM, where I memorized all the components that a computer is
+            built upon.
           </p>
+          <a
+            href="https://www.linkedin.com/in/jerome-marbebe-301794231/"
+            class="resume-link"
+            >Contact me</a
+          >
+          <div class="social-icons">
+            <a href="https://github.com/Jxrom" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jerome-marbebe-301794231/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/your-profile" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@jeromemarbebe3791"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-          <label for="message">Your Message:</label>
-          <br />
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Type your message here"
-          ></textarea>
-        </fieldset>
-        <br />
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-      </form>
-    </article>
+    <script>
+      // JavaScript for scroll animation
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
 
-    <h3>Social Media Links:</h3>
-    <a
-      href="https://www.facebook.com/marbebe.jerome04"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Facebook</a
-    >
-    <a href="https://github.com/Jxrom" target="_blank" rel="noopener noreferrer"
-      >Github</a
-    >
-    <a
-      href="https://linkedin.com/in/jerome-marbebe-301794231/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Linkedin</a
-    >
-    <a
-      href="https://www.youtube.com/channel/UCBc8Eh5FK9pU0gV_7KeCAvw"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Youtube</a
-    >
-    <a
-      href="https://www.tinkercad.com/users/9WxbY1AYeqi-jerome-marbebe/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >TinkerCad</a
-    >
+      function handleScroll() {
+        const h1Elements = document.querySelectorAll("h1");
 
-    <hr />
-    <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-      <a href="#"> Back to Top</a>
-    </p>
-    <hr />
-    <footer>
-      <p>Copyright © Jerome Marbebe</p>
-    </footer>
+        h1Elements.forEach(function (el) {
+          if (isElementInViewport(el)) {
+            el.classList.add("h1-visible");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+    </script>
   </body>
 </html>
