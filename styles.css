@@ -1,0 +1,233 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: "Comfortaa", sans-serif; /* Set Comfortaa as the primary font */
+  background-color: #c2ffc7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #fff;
+  color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Adds spacing between logo and nav */
+}
+
+.logo a {
+  color: #000;
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between nav items */
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #526e48;
+}
+
+.cta .btn {
+  text-decoration: none;
+  background-color: #526e48;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+main {
+  margin-top: 100px;
+  padding: 50px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; /* Controls the spacing between text and image */
+  max-width: 1200px; /* Ensures the content doesn't stretch too wide */
+  margin: 0 auto; /* Centers the section */
+  padding: 20px;
+  margin-bottom: 80px; /* Adds space after the "TURTLEBYTE" section */
+}
+
+.text-content {
+  flex: 1;
+  max-width: 40%; /* Prevents text from stretching */
+  text-align: left;
+}
+
+.text-content h1 {
+  font-size: 40px; /* Adjusted for better scaling */
+  margin-bottom: 15px; /* Reduces space below the title */
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.image-content {
+  flex: 1;
+  max-width: 55%; /* Reduces the image's width slightly */
+  text-align: center; /* Centers the image horizontally */
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.discover-link {
+  display: inline-block;
+  margin-top: 15px; /* Adds space between the description and the link */
+  font-size: 18px;
+  color: #000000; /* A subtle blue color for the link */
+  text-decoration: underline; /* Underlines the text */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.discover-link:hover {
+  color: #526e48; /* Darker blue on hover */
+}
+
+/* Profession section styling */
+.profession-section {
+  padding: 20px;
+}
+
+.profession-section .content {
+  display: flex;
+  flex-direction: column; /* Stack the h1s vertically */
+  gap: 20px; /* Space between lines */
+}
+
+.profession-section .content h1 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Align text */
+.profession-section .content .left {
+  align-self: flex-start; /* Aligns text to the left */
+  margin-left: 100px;
+  margin: 10px;
+}
+
+.profession-section .content .right {
+  align-self: flex-end; /* Aligns text to the right */
+  margin-right: 100px;
+  margin: 10px;
+}
+
+/* Centered Title */
+.centered-title {
+  text-align: center;
+  font-size: 28px; /* Adjust size as needed */
+  margin-bottom: 5px; /* Adds spacing below the title */
+  margin-top: 50px;
+  color: #333; /* Optional: Adjust text color */
+}
+
+/* Justified Paragraph */
+.justified-text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8; /* Improves readability */
+  margin: 0 auto 20px auto; /* Centers the text block and adds space below */
+  max-width: 800px; /* Restricts width for better layout */
+}
+
+/* Resume Link */
+.resume-link {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: color 0.3s;
+  text-decoration: underline; /* Underlines the text */
+}
+
+.resume-link:hover {
+  color: #526e48; /* Adds hover effect for the link */
+}
+
+.social-icons {
+  text-align: center; /* Centers the icons */
+  margin-top: 20px; /* Adds space above the icons */
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #000; /* Default icon color */
+  margin: 0 10px; /* Adds space between icons */
+  font-size: 40px; /* Increased icon size */
+  transition: color 0.3s; /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+  color: #526e48; /* Change color on hover */
+}
+
+/* Add these styles to your CSS file */
+
+h1 {
+  opacity: 0;
+  transform: translateY(50px); /* Start slightly below */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* This will be added when the element becomes visible */
+.h1-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: For left and right positions */
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
