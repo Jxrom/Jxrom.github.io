@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JXROM.DEV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="#">JXROM.DEV</a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">PROJECTS</a></li>
+            <li><a href="#services">ABOUT ME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="cta">
+        <a href="#shop" class="btn">Shop Now</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="text-content">
+          <h1>TURTLEBYTE</h1>
+          <p>
+            Turtlebyte is a robotics learning kit for ages 9-12, using
+            card-based coding instead of text, leading to better attention,
+            understanding, spatial and motor skill development, and
+            collaboration.
+          </p>
+          <a
+            href="https://www.jamesdysonaward.org/en-US/2024/project/turtlebyte"
+            class="discover-link"
+            target="_blank"
+            >Discover</a
+          >
+        </div>
+        <div class="image-content">
+          <img src="images/turtlebyte.jpg" alt="Turtlebyte Robotics Kit" />
+        </div>
+      </section>
+
+      <!-- New section with styled content -->
+      <section class="profession-section">
+        <div class="content">
+          <h1 class="left">A <b>Computer Engineer</b> by profession</h1>
+          <h1 class="right">a <b>Software Developer</b> by passion</h1>
+          <h1 class="left">and an <b>Artist</b> in this craft.</h1>
+
+          <h3 class="centered-title">the story of me</h3>
+          <p class="justified-text">
+            A product of passion and love for technology, I yearn for thy
+            commitment in my craft. My passion for thy technology was concepted
+            when I was grade school, when I was learning computer for the first
+            time in my life, where I first learn the difference between a
+            hardware and a software, where I understood the difference of ROM
+            and RAM, where I memorized all the components that a computer is
+            built upon.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/jerome-marbebe-301794231/"
+            class="resume-link"
+            >Contact me</a
+          >
+          <div class="social-icons">
+            <a href="https://github.com/Jxrom" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jerome-marbebe-301794231/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/your-profile" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@jeromemarbebe3791"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // JavaScript for scroll animation
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function handleScroll() {
+        const h1Elements = document.querySelectorAll("h1");
+
+        h1Elements.forEach(function (el) {
+          if (isElementInViewport(el)) {
+            el.classList.add("h1-visible");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+    </script>
+  </body>
+</html>
