@@ -231,3 +231,26 @@ h1 {
 .right {
   text-align: right;
 }
+
+.horizontal-scroll {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start; /* Aligns the images to the left */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  overflow-y: hidden; /* Prevents vertical scrolling */
+  white-space: nowrap; /* Prevents images from wrapping */
+}
+
+.image-container {
+  display: flex;
+  gap: 20px; /* Space between images */
+  flex: 0 0 auto; /* Prevents flex-grow and keeps the images fixed */
+}
+
+.image-container img {
+  width: 300px; /* You can adjust the size of the images */
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover; /* Ensures images fit well within the container */
+}
+
